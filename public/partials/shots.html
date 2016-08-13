@@ -1,0 +1,46 @@
+<div class="row center-block">
+  <div class="col s12">
+    <input type="text" class="form-control" placeholder="Buscar" ng-model="criterioDeBusca">
+  </div>
+  <div class="col s12">
+    <div class="btn-group" role="group">
+      <button type="button" class="btn waves-effect waves-light blue-grey darken-2">Mais Recentes</button>
+      <button type="button" class="btn waves-effect waves-light blue-grey darken-2">Mais Antigas</button>
+      <button type="button" class="btn waves-effect waves-light blue-grey darken-2">Populares</button>
+      <div class="switch">
+        <label>
+          A
+          <input type="checkbox" ng-click="ordenarPor('nome')">
+          <span class="lever blue-grey darken-2"></span>
+          Z
+        </label>
+      </div>
+    </div>
+  </div>
+</div>
+<hr>
+
+<div class="row">
+  <div class="col s6 m4" ng-repeat="shot in shots | filter:{nome:criterioDeBusca} | orderBy:criterioDeOrdenacao:direcaoDaOrdenacao">
+    <div class="card">
+      <div class="card-image waves-effect waves-block waves-light">
+        <img class="materialboxed responsive-img" data-caption="{{shot.title}}" width="800" ng-src="{{shot.images.hidpi}}">
+      </div>
+      <div class="card-content">
+        <span class="card-title activator grey-text text-darken-4">{{shot.title}}<i class="material-icons right">subject</i></span>
+        <div class="row">
+          <img class="responsive-img circle col s3" ng-src="{{shot.user.avatar_url}}" alt="">
+          <div class="col s9">
+            <p>{{shot.user.name}}</p>
+            <p>Likes: {{shot.likes_count}}</p>
+            <p>Views: {{shot.views_count}}</p>
+          </div>
+        </div>
+      </div>
+      <div class="card-reveal">
+        <span class="card-title grey-text text-darken-4">{{shot.title}}<i class="material-icons right">close</i></span>
+        <p>{{shot.description | cleanHTML}}</p>
+      </div>
+    </div>
+  </div>
+</div>
