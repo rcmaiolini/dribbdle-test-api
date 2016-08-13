@@ -6389,24 +6389,3 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 @media (min-height: 40.125em) {
   .picker--time .picker__box {
     margin-bottom: 5em; } }
-
-.header-image {
-  background: url("../img/img-header.jpg") no-repeat;
-  background-position: center center;
-  height: 400px;
-  text-align: center;
-  position: relative; }
-  .header-image h1 {
-    text-shadow: 0 0 10px black;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%, 0);
-    width: 100%;
-    color: #fff; }
-
-footer {
-  background-color: #000;
-  color: #fff;
-  text-align: center;
-  height: 200px; }
