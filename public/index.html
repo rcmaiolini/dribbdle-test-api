@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="dribbbleFrontendTest">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dribbble - Most Popular Shots</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- build:css css/style.min.css -->
+    <link href="css/main.css" rel="stylesheet">
+    <!-- endbuild -->
+
+  </head>
+  <body class="blue-grey lighten-4">
+
+    <header class="container" ng-include="'partials/layout/header.html'"></header>
+
+    <section class="container" ng-view></section>
+
+    <footer class="page-footer blue-grey darken-4" ng-include="'partials/layout/footer.html'"></footer>
+
+    <!-- build:components js/components.min.js -->
+    <script src="components/jquery/dist/jquery.js"></script>
+    <script src="components/Materialize/bin/materialize.js"></script>
+    <script src="components/angular/angular.js"></script>
+    <script src="components/angular-route/angular-route.js"></script>
+    <script src="components/angular-resource/angular-resource.js"></script>
+    <!-- endbuild -->
+    <!-- build:js js/app.min.js -->
+    <script src="js/app.js"></script>
+    <script src="js/controllers/shotsCtrl.js"></script>
+    <script src="js/services/services.js"></script>
+    <script src="js/routes/routes.js"></script>
+    <script src="js/filters/filters.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>
