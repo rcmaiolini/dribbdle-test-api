@@ -20,6 +20,8 @@
     "angular-route": "^1.5.8",
     "angular-resource": "^1.5.8",
     "jquery": "2.2.4",
-    "Materialize": "materialize#~0.97.6"
+    "Materialize": "materialize#~0.97.6",
+    "angular-sanitize": "^1.5.8",
+    "ng-simplePagination": "^1.0.3"
   }
 }

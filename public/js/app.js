@@ -1,1 +1,1 @@
-var app = angular.module('dribbbleFrontendTest', ['ngRoute', 'ngResource', 'simplePagination']);
+var app = angular.module('dribbbleFrontendTest', ['ngRoute', 'ngResource', 'simplePagination', 'ngSanitize']);
