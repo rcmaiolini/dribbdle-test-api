@@ -5,14 +5,7 @@ app.controller('shotsCtrl', ['$scope', 'shotsApi' , function($scope, shotsApi){
   shotsApi.query(function(shots) {
 		$scope.shots = shots;
     $('.materialboxed').materialbox();
-    console.log(shots);
 	}, function(erro) {
 		console.log(erro);
 	});
-
-  $scope.ordenarPor = function(campo){
-    console.log(campo);
-    $scope.criterioDeOrdenacao = campo;
-    $scope.direcaoDaOrdenacao = !$scope.direcaoDaOrdenacao;
-  };
 }]);

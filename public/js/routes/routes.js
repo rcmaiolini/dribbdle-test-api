@@ -1,4 +1,4 @@
-app.config(["$routeProvider", function($routeProvider){
+app.config(["$routeProvider", "$locationProvider", function($routeProvider, $locationProvider){
 
   $routeProvider.when("/", {
     redirectTo: "/shots"
@@ -10,5 +10,8 @@ app.config(["$routeProvider", function($routeProvider){
   });
 
   $routeProvider.otherwise({redirectTo: "/shots"});
+
+  // use the HTML5 History API
+  //$locationProvider.html5Mode(true);
 
 }]);

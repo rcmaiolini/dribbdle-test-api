@@ -1,5 +1,7 @@
 app.filter('cleanHTML', function () {
     return function(text) {
-        return text.replace(/<\/?p[^>]*>/g, '');
+        return text
+            .replace(/<\/?p[^>]*>/g, '')
+            .replace(/<br \/>/g, '');
     };
 });
