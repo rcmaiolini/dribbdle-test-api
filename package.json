@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@bitbucket.org/ricardo_maiolini/whoareyouon.git"
+    "url": "git@github.com:rcmaiolini/zazcar-frontend.git"
   },
   "author": "",
   "license": "ISC",
