@@ -6389,3 +6389,34 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 @media (min-height: 40.125em) {
   .picker--time .picker__box {
     margin-bottom: 5em; } }
+
+@media only screen and (max-width: 600px) {
+  nav .brand-logo {
+    font-size: 1.5rem; } }
+
+@media only screen and (max-width: 992px) {
+  nav .brand-logo {
+    font-size: 1.5rem; } }
+
+@media only screen and (max-width: 600px) {
+  .pagination li a {
+    padding: 0 6px; } }
+
+.card .card-content {
+  padding: 0 20px; }
+
+.card .card-title {
+  display: block;
+  line-height: 28px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+  .card .card-title + .row {
+    margin-top: 15px; }
+
+@media only screen and (min-width: 601px) {
+  .card .card-title {
+    font-size: 20px; } }
+
+.btn-floating {
+  margin: 10px 0; }

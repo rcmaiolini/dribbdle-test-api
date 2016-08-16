@@ -1,0 +1,27 @@
+
+.card {
+  .card-content {
+    padding: 0 20px;
+  }
+
+  .card-title {
+    display: block;
+    line-height: 28px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    + .row {
+      margin-top: 15px;
+    }
+  }
+}
+
+
+@media #{$medium-and-up} {
+  .card {
+    .card-title {
+      font-size: 20px;
+    }
+  }
+}

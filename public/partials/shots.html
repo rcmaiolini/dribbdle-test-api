@@ -17,20 +17,21 @@
 </ul>
 
 <div class="row">
-  <div class="col s12 m4 l3" ng-repeat="shot in shots | filter:busca | startFrom: pagination.page * pagination.perPage | limitTo: pagination.perPage">
+  <div class="col s12 m6 l4" ng-repeat="shot in shots | filter:busca | startFrom: pagination.page * pagination.perPage | limitTo: pagination.perPage">
     <div class="card">
       <div class="card-image waves-effect waves-block waves-light">
         <img class="responsive-img activator" data-caption="{{shot.title}}" width="800" ng-src="{{shot.images.normal}}">
       </div>
       <div class="card-content">
-        <span class="card-title activator grey-text text-darken-4">{{shot.title | limitTo: 15}}<i class="material-icons right">subject</i></span>
+        <span class="card-title activator grey-text text-darken-4">{{shot.title}}</span>
         <div class="row">
-          <img class="responsive-img circle col s3" ng-src="{{shot.user.avatar_url}}" alt="">
-          <div class="col s9">
+          <img class="responsive-img circle col s4" ng-src="{{shot.user.avatar_url}}" alt="">
+          <div class="col s8">
             <p>{{shot.user.name}}</p>
             <p>Likes: {{shot.likes_count}}</p>
             <p>Views: {{shot.views_count}}</p>
           </div>
+          <a class="btn-floating btn-small waves-effect waves-light red lighten-2 activator right"><i class="material-icons">subject</i></a>
         </div>
       </div>
       <div class="card-reveal">

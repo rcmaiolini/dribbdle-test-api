@@ -1,5 +1,8 @@
+
 @import '../components/Materialize/sass/materialize';
 
-@import 'base/base';
 @import 'layout/header';
-@import 'layout/footer';
+
+@import 'module/pagination';
+@import 'module/card';
+@import 'module/buttons';

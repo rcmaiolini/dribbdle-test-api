@@ -23,7 +23,7 @@ gulp.task('clean', function() {
 });
 
 gulp.task('copy', function() {
-	return gulp.src('public/*.html')
+	return gulp.src('public/**/*.html')
 		.pipe(gulp.dest('dist'));
 });
 
