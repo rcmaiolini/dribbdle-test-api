@@ -13,3 +13,7 @@ gulp server
 
 Para gerar o build:
 gulp build
+
+
+Funcionando no Amazon S3
+http://dribbble-shots-teste.s3-website-sa-east-1.amazonaws.com
