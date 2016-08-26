@@ -1,5 +1,3 @@
-# zazcar-frontend
-
 node version 4.4.7
 Precisa ter instalado globalmente - gulp, bower, RubyGems e Gem bundler
 
